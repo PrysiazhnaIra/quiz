@@ -1,0 +1,52 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.main {
+  width: 100%;
+  max-width: 42rem; /* max-w-2xl */
+  text-align: center;
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.progressContainer {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.progressInfo {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  margin-bottom: 0.75rem;
+}
+
+.track {
+  height: 0.75rem; /* h-3 */
+  width: 100%;
+  background-color: var(--glass-border);
+  border-radius: 9999px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+}
+
+.bar {
+  height: 100%;
+  border-radius: 9999px;
+  background-image: var(--primary-gradient);
+  transition: all 0.7s ease-out;
+  box-shadow: 0 2px 10px rgba(255, 154, 158, 0.4);
+}

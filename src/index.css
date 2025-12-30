@@ -1,0 +1,62 @@
+
+:root {
+  --bg-color: #fffaf0;
+  --text-main: #2d3748;
+  --text-muted: #718096;
+  --primary-gradient: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+  --accent-color: #ed64a6;
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.9);
+  --input-bg: #ffffff;
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.02);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.05);
+  --success-color: #48bb78;
+  --error-color: #f56565;
+  --font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+  --radius-lg: 1.25rem;
+  --radius-xl: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  min-height: 100vh;
+  background-image: 
+    radial-gradient(circle at 5% 5%, rgba(255, 154, 158, 0.15) 0, transparent 40%),
+    radial-gradient(circle at 95% 95%, rgba(254, 207, 239, 0.15) 0, transparent 40%);
+  overflow-x: hidden;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+h1, h2, h3 {
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

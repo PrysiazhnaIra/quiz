@@ -1,0 +1,35 @@
+.header {
+  margin-bottom: 2.5rem;
+  padding-top: 2.5rem;
+}
+
+.title {
+  font-size: 2.25rem; /* 36px */
+  font-weight: 900;
+  letter-spacing: -0.025em;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+  line-height: 1.1;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3.75rem; /* 60px */
+  }
+}
+
+.gradientText {
+  background-image: var(--primary-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 1.125rem;
+  max-width: 32rem;
+  margin: 0 auto;
+  font-weight: 500;
+}

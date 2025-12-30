@@ -1,0 +1,61 @@
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--glass-border);
+}
+
+.backButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  color: var(--text-muted);
+}
+
+.backButton:not(:disabled):hover {
+  color: var(--text-main);
+  background-color: var(--glass-border);
+}
+
+.backButton:disabled {
+  opacity: 0;
+  cursor: default;
+  visibility: hidden;
+}
+
+.nextButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border-radius: var(--radius-lg);
+  font-weight: 700;
+  color: white;
+  background-image: var(--primary-gradient);
+  transition: all 0.2s;
+  box-shadow: 0 10px 15px -3px rgba(236, 72, 153, 0.3); /* pink-500/30 */
+}
+
+.nextButton:not(:disabled):hover {
+  box-shadow: 0 10px 15px -3px rgba(236, 72, 153, 0.4);
+  transform: scale(1.02);
+}
+
+.nextButton:not(:disabled):active {
+  transform: scale(0.95);
+}
+
+.nextButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.nextButton:disabled:hover {
+  transform: none;
+}
